@@ -24,6 +24,10 @@ class VCRegistro: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func accionBtnRegistro() {
+        DataHolder.sharedinstance.user=txtRUsuario?.text
+        DataHolder.sharedinstance.pass=txtRPass?.text
+    }
 
     /*
     // MARK: - Navigation

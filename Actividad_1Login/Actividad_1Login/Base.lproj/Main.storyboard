@@ -133,6 +133,9 @@
                                 <rect key="frame" x="248" y="596" width="111" height="51"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="REGISTRAR"/>
+                                <connections>
+                                    <action selector="accionBtnRegistro" destination="cbw-aZ-0R5" eventType="touchUpInside" id="xEA-gm-PmR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

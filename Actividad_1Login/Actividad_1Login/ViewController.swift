@@ -29,7 +29,7 @@ class ViewController: UIViewController {
        // lblConsola?.text=String(format:"Usuario o contraseña no validos")
         
         
-        if txtUsuario?.text=="a" && txtPass?.text=="a" {
+        if txtUsuario?.text==DataHolder.sharedinstance.user && txtPass?.text==DataHolder.sharedinstance.pass {
             self.performSegue(withIdentifier: "trans1", sender: self)
         }else{
             lblConsola?.text=String(format:"Usuario o contraseña no validos")
