@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA45DF761E82D75400373685 /* VCRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45DF751E82D75400373685 /* VCRegistro.swift */; };
 		BA920ADA1E780C1C009793CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA920AD91E780C1C009793CF /* AppDelegate.swift */; };
 		BA920ADC1E780C1C009793CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA920ADB1E780C1C009793CF /* ViewController.swift */; };
 		BA920ADF1E780C1C009793CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA920ADD1E780C1C009793CF /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA45DF751E82D75400373685 /* VCRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegistro.swift; sourceTree = "<group>"; };
 		BA920AD61E780C1C009793CF /* Actividad_1Login.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Actividad_1Login.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA920AD91E780C1C009793CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA920ADB1E780C1C009793CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				BA920AE01E780C1C009793CF /* Assets.xcassets */,
 				BA920AE21E780C1C009793CF /* LaunchScreen.storyboard */,
 				BA920AE51E780C1C009793CF /* Info.plist */,
+				BA45DF751E82D75400373685 /* VCRegistro.swift */,
 			);
 			path = Actividad_1Login;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			files = (
 				BA920ADC1E780C1C009793CF /* ViewController.swift in Sources */,
 				BA920ADA1E780C1C009793CF /* AppDelegate.swift in Sources */,
+				BA45DF761E82D75400373685 /* VCRegistro.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +518,7 @@
 				BA920B001E780C1C009793CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA920B011E780C1C009793CF /* Build configuration list for PBXNativeTarget "Actividad_1LoginTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +527,7 @@
 				BA920B031E780C1C009793CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA920B041E780C1C009793CF /* Build configuration list for PBXNativeTarget "Actividad_1LoginUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +536,7 @@
 				BA920B061E780C1C009793CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
