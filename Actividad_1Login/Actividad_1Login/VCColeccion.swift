@@ -1,5 +1,5 @@
 //
-//  VCTabla.swift
+//  VCColeccion.swift
 //  Actividad_1Login
 //
 //  Created by Sergio Redondo on 23/3/17.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class VCTabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class VCColeccion: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet var tbnMitabla:UITableView?
-    
+    @IBOutlet var colPrincipal:UICollectionView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,16 +23,17 @@ class VCTabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
         // Dispose of any resources that can be recreated.
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return DataHolder.sharedinstance.animales.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:TVCTabla = tableView.dequeueReusableCell(withIdentifier: "MiCelda1") as! TVCTabla
-        cell.lblCelda?.text=DataHolder.sharedinstance.animales[indexPath.row]
-        cell.imagen?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:CVCMiCelda2 = collectionView.dequeueReusableCell(withReuseIdentifier: "miCelda2", for: indexPath) as! CVCMiCelda2
+        cell.lblNombre?.text=DataHolder.sharedinstance.animales[indexPath.row]
+        cell.imgMain?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
         return cell
     }
+    
     
     
 

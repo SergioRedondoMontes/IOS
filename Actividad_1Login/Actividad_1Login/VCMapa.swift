@@ -1,5 +1,5 @@
 //
-//  VCTabla.swift
+//  VCMapa.swift
 //  Actividad_1Login
 //
 //  Created by Sergio Redondo on 23/3/17.
@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import MapKit
 
-class VCTabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class VCMapa: UIViewController{
     
-    @IBOutlet var tbnMitabla:UITableView?
-    
+    @IBOutlet var mapa:MKMapView?
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,18 +23,6 @@ class VCTabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataHolder.sharedinstance.animales.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:TVCTabla = tableView.dequeueReusableCell(withIdentifier: "MiCelda1") as! TVCTabla
-        cell.lblCelda?.text=DataHolder.sharedinstance.animales[indexPath.row]
-        cell.imagen?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
-        return cell
-    }
-    
     
 
     /*
