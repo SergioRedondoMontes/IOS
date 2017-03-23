@@ -14,4 +14,6 @@ class DataHolder: NSObject {
     
     var user:String?
     var pass:String?
+    
+    var animales:[String]=["perro","gato","pez","dinosaurio","hombre"]
 }
