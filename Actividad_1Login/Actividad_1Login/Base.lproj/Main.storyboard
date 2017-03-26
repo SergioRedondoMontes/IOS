@@ -236,7 +236,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" id="Oza-4R-thF"/>
                     <connections>
-                        <outlet property="mapa" destination="OwO-Qu-k5d" id="8r7-zB-qwi"/>
+                        <outlet property="mapa" destination="OwO-Qu-k5d" id="Bqs-C2-e2q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hqb-R9-gFg" userLabel="First Responder" sceneMemberID="firstResponder"/>

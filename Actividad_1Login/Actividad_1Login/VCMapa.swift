@@ -11,12 +11,22 @@ import MapKit
 
 class VCMapa: UIViewController{
     
-    @IBOutlet var mapa:MKMapView?
+    @IBOutlet weak var mapa:MKMapView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        let location = CLLocationCoordinate2D(latitude: 40.540109,longitude: -3.893994)
+        
+        let span = MKCoordinateSpanMake(0.2,0.2)
+        let region = MKCoordinateRegion(center:location, span:span)
+        
+        mapa.setRegion(region, animated:true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        mapa.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,6 +35,9 @@ class VCMapa: UIViewController{
     }
     
 
+    
+    
+    
     /*
     // MARK: - Navigation
 
