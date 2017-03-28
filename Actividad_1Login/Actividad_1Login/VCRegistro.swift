@@ -12,6 +12,9 @@ class VCRegistro: UIViewController {
     
     @IBOutlet var txtRUsuario:UITextField?
     @IBOutlet var txtRPass:UITextField?
+    @IBOutlet var txtCheckPass:UITextField?
+    @IBOutlet var lblError:UILabel?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,8 +28,12 @@ class VCRegistro: UIViewController {
     }
     
     @IBAction func accionBtnRegistro() {
+        if txtRPass?.text==txtCheckPass?.text{
         DataHolder.sharedinstance.user=txtRUsuario?.text
         DataHolder.sharedinstance.pass=txtRPass?.text
+        }else{
+           lblError?.text=String(format:"Usuario no coincide")
+        }
     }
 
     /*
