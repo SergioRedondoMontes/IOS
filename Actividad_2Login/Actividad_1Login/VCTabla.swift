@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class VCTabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -14,6 +16,11 @@ class VCTabla: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+       DataHolder.sharedinstance.firDataBaseRef.child("Coches").observe(FIRDataEventType.value, with: { (snapshot) in print("Lo descargado", snapshot.value)
+            //let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+        })
 
         // Do any additional setup after loading the view.
     }

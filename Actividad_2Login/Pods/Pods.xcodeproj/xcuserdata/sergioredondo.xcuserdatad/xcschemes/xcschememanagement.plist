@@ -14,17 +14,17 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Actividad_1Login.xcscheme</key>
+		<key>Pods-Actividad_2Login.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Actividad_1LoginTests.xcscheme</key>
+		<key>Pods-Actividad_2LoginTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-Actividad_1LoginUITests.xcscheme</key>
+		<key>Pods-Actividad_2LoginUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,7 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2E79D509F9176DA0EBB8C800226E65D1</key>
+		<key>67BFACF665A72D47FD22D591313064BB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,22 +47,22 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>818AF71E2843DB6C3925A1DAEE9A9655</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E08402B9CCD63C859A2AF2B5892C8A8A</key>
+		<key>C395D3FAD27F6A32A64C2F484905AE10</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBF20B07848179490B5E9048ADCBCB9D</key>
+		<key>CBCAB8295F7D5453B1A12249040850EA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F468D5D7E80B30518CB29751DF813CFF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

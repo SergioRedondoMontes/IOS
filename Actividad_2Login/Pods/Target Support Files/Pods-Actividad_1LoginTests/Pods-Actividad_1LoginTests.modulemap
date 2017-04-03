@@ -1,6 +1,0 @@
-framework module Pods_Actividad_1LoginTests {
-  umbrella header "Pods-Actividad_1LoginTests-umbrella.h"
-
-  export *
-  module * { export * }
-}

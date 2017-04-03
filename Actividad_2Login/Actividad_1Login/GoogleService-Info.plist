@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>258431248668-uj8f32ch5uhb2k4ddhen592smqm3r245.apps.googleusercontent.com</string>
+	<string>1091653590808-2cdqf5vt86mvue2709c0g7tgq9fsavov.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.258431248668-uj8f32ch5uhb2k4ddhen592smqm3r245</string>
+	<string>com.googleusercontent.apps.1091653590808-2cdqf5vt86mvue2709c0g7tgq9fsavov</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCaRw93UXqwG4uK9tcdiPnoC9xIv2xpN38</string>
+	<string>AIzaSyC-sKhESreYM7YocwunA1H9t_v_i5Yqx5E</string>
 	<key>GCM_SENDER_ID</key>
-	<string>258431248668</string>
+	<string>1091653590808</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>U-Tad.Actividad-2Login</string>
 	<key>PROJECT_ID</key>
-	<string>actividad2-97730</string>
+	<string>actividad2prueba</string>
 	<key>STORAGE_BUCKET</key>
-	<string>actividad2-97730.appspot.com</string>
+	<string>actividad2prueba.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:258431248668:ios:ab003c21c106a0b1</string>
+	<string>1:1091653590808:ios:8c43ca7fbc6c1043</string>
 	<key>DATABASE_URL</key>
-	<string>https://actividad2-97730.firebaseio.com</string>
+	<string>https://actividad2prueba.firebaseio.com</string>
 </dict>
 </plist>
