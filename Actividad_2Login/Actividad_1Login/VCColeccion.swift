@@ -16,6 +16,7 @@ class VCColeccion: UIViewController,UICollectionViewDelegate, UICollectionViewDa
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -24,13 +25,16 @@ class VCColeccion: UIViewController,UICollectionViewDelegate, UICollectionViewDa
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return DataHolder.sharedinstance.animales.count
+        return DataHolder.sharedinstance.arCoche!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CVCMiCelda2 = collectionView.dequeueReusableCell(withReuseIdentifier: "miCelda2", for: indexPath) as! CVCMiCelda2
-        cell.lblNombre?.text=DataHolder.sharedinstance.animales[indexPath.row]
-//        cell.imgMain?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
+        let cochei=DataHolder.sharedinstance.arCoche![indexPath.row]
+        //concat = "\(cochei.sNombre!)  \(cochei.sMarca!)"
+        let str = String(format: "%@ %@ %d", cochei.sNombre!, cochei.sMarca!, cochei.iFabricado!)
+        cell.lblNombre?.text=str
+        cell.descargarImagen(ruta: cochei.sRutaImagen!)//        cell.imgMain?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
         return cell
     }
     

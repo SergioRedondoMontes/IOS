@@ -22,7 +22,7 @@ class DataHolder: NSObject {
     var arCoche: Array<NSOCoche>?
     var firStorageRef:FIRStorageReference?
     
-    var animales:[String]=["perro","gato","pez","dinosaurio","hombre"]
+    //var animales:[String]=["perro","gato","pez","dinosaurio","hombre"]
     //var images:[String]=["Homer-pythagoras.png","Blinky.png","Homer-pythagoras.png","Blinky.png","Homer-pythagoras.png"]
     
     func initFirebase() {

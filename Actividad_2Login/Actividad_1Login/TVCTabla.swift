@@ -26,15 +26,17 @@ class TVCTabla: UITableViewCell {
     }
     
     func descargarImagen(ruta:String) {
-        let islanRef = DataHolder.sharedinstance.firStorageRef?.child(ruta)
+        if (!ruta.isEmpty){
+            let islanRef = DataHolder.sharedinstance.firStorageRef?.child(ruta)
         
-        islanRef?.data(withMaxSize: 1 * 1024 * 1024){ data, error in
-            if let error = error{
+            islanRef?.data(withMaxSize: 1 * 1024 * 1024){ data, error in
+                if error != nil{
                 //devulve error no se muestra nada
-            }else{
+                }else{
                 //si devuelve ruta se muestra imagen
-                let image = UIImage(data: data!)
-                self.imagen?.image=image
+                    let image = UIImage(data: data!)
+                    self.imagen?.image=image
+                }
             }
         }
     }
