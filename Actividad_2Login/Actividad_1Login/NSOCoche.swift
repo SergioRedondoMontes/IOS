@@ -14,11 +14,15 @@ class NSOCoche: NSObject {
     var sMarca:String?
     var iFabricado:Int?
     var sRutaImagen:String?
+    var dbLat:Double?
+    var dbLon:Double?
     
     init(valores:[String:AnyObject]) {
         sNombre=valores["Nombre"] as? String
         sMarca=valores["Marca"] as? String
         iFabricado=valores["Fabricado"] as? Int
         sRutaImagen=valores["RutaImagen"] as? String
+        dbLat=valores["lat"] as? Double
+        dbLon=valores["lon"] as? Double
     }
 }
