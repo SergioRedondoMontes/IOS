@@ -15,10 +15,12 @@ class ViewController: UIViewController {
     @IBOutlet var txtUsuario:UITextField?
     @IBOutlet var txtPass:UITextField?
     @IBOutlet var lblConsola:UILabel?
+    @IBOutlet var Load:UIActivityIndicatorView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        Load?.isHidden=true
     }
 
     override func didReceiveMemoryWarning() {
@@ -35,7 +37,10 @@ class ViewController: UIViewController {
             }else{
                 self.lblConsola?.text=String(format:"Usuario o contraseña no validos")
             }
+            self.Load?.stopAnimating()
         }
+        Load?.isHidden=false
+        Load?.startAnimating()
     }
 }
 

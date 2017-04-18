@@ -30,7 +30,7 @@ class VCColeccion: UIViewController,UICollectionViewDelegate, UICollectionViewDa
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:CVCMiCelda2 = collectionView.dequeueReusableCell(withReuseIdentifier: "miCelda2", for: indexPath) as! CVCMiCelda2
         cell.lblNombre?.text=DataHolder.sharedinstance.animales[indexPath.row]
-        cell.imgMain?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
+//        cell.imgMain?.image=UIImage(named:DataHolder.sharedinstance.images[indexPath.row])
         return cell
     }
     

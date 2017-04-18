@@ -11,6 +11,7 @@
 		4A72A5AA02ED32784B462E93 /* Pods_Actividad_2LoginUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E52A818C9820C8C7324AFDF4 /* Pods_Actividad_2LoginUITests.framework */; };
 		A55834058353FA84F52578BE /* Pods_Actividad_2Login.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3043B35E3B40CCF1B331AB8B /* Pods_Actividad_2Login.framework */; };
 		BA1ED6FD1E92F33D00CE5939 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA1ED6FC1E92F33D00CE5939 /* GoogleService-Info.plist */; };
+		BA400F7E1E93873800409B07 /* NSOCoche.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA400F7D1E93873800409B07 /* NSOCoche.swift */; };
 		BA45DF761E82D75400373685 /* VCRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45DF751E82D75400373685 /* VCRegistro.swift */; };
 		BA45DF781E82E65400373685 /* DataHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45DF771E82E65400373685 /* DataHolder.swift */; };
 		BA45DF7A1E84321500373685 /* TVCTabla.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA45DF791E84321500373685 /* TVCTabla.swift */; };
@@ -55,6 +56,7 @@
 		5797583E088CEB933D787FF9 /* Pods-Actividad_2LoginUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actividad_2LoginUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Actividad_2LoginUITests/Pods-Actividad_2LoginUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA85E402ABD47E80BE5D01D6 /* Pods-Actividad_2LoginUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Actividad_2LoginUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Actividad_2LoginUITests/Pods-Actividad_2LoginUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA1ED6FC1E92F33D00CE5939 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BA400F7D1E93873800409B07 /* NSOCoche.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOCoche.swift; sourceTree = "<group>"; };
 		BA45DF751E82D75400373685 /* VCRegistro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCRegistro.swift; sourceTree = "<group>"; };
 		BA45DF771E82E65400373685 /* DataHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataHolder.swift; sourceTree = "<group>"; };
 		BA45DF791E84321500373685 /* TVCTabla.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TVCTabla.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				BA45DF861E84534F00373685 /* VCColeccion.swift */,
 				BA45DF881E8458EF00373685 /* CVCMiCelda2.swift */,
 				BA45DF8A1E845BEF00373685 /* VCMapa.swift */,
+				BA400F7D1E93873800409B07 /* NSOCoche.swift */,
 			);
 			path = Actividad_1Login;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				BA45DF761E82D75400373685 /* VCRegistro.swift in Sources */,
 				BA45DF871E84534F00373685 /* VCColeccion.swift in Sources */,
 				BA45DF781E82E65400373685 /* DataHolder.swift in Sources */,
+				BA400F7E1E93873800409B07 /* NSOCoche.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

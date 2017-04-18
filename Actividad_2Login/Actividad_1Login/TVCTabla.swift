@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class TVCTabla: UITableViewCell {
     
@@ -23,5 +24,18 @@ class TVCTabla: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    func descargarImagen(ruta:String) {
+        let islanRef = DataHolder.sharedinstance.firStorageRef?.child(ruta)
+        
+        islanRef?.data(withMaxSize: 1 * 1024 * 1024){ data, error in
+            if let error = error{
+                //devulve error no se muestra nada
+            }else{
+                //si devuelve ruta se muestra imagen
+                let image = UIImage(data: data!)
+                self.imagen?.image=image
+            }
+        }
+    }
 }
